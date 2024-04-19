@@ -1,0 +1,8 @@
+﻿<Properties StartupConfiguration="{B5DBAD68-02BC-47E3-92F9-A20C348164AA}|https">
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Data FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Service FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Core FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Api FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Infrastructure FirstBuild="True" />
+</Properties>

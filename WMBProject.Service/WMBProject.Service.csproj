@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WMBProject.Infrastructure\WMBProject.Infrastructure.csproj" />
+    <ProjectReference Include="..\WMBProject.Data\WMBProject.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Artists\" />
+    <None Remove="Songs\" />
+    <None Remove="Orders\" />
+    <None Remove="Invoices\" />
+    <None Remove="Customers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Artists\" />
+    <Folder Include="Songs\" />
+    <Folder Include="Orders\" />
+    <Folder Include="Invoices\" />
+    <Folder Include="Customers\" />
+  </ItemGroup>
+</Project>

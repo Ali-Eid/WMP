@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kmnifS4EzRoU0m4iQbL6Fs9fOb2oTqEFP7bIgsBieDE=",
+  "Source": "WMBProject.Api",
+  "BasePath": "_content/WMBProject.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

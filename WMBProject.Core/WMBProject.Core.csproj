@@ -1,0 +1,172 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WMBProject.Service\WMBProject.Service.csproj" />
+    <ProjectReference Include="..\WMBProject.Infrastructure\WMBProject.Infrastructure.csproj" />
+    <ProjectReference Include="..\WMBProject.Data\WMBProject.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Features\" />
+    <None Remove="Mapping\" />
+    <None Remove="Features\Artists\" />
+    <None Remove="Features\Artists\Command\" />
+    <None Remove="Features\Artists\Query\" />
+    <None Remove="Features\Artists\Query\Models\" />
+    <None Remove="Features\Artists\Query\Handlers\" />
+    <None Remove="Features\Artists\Command\Handlers\" />
+    <None Remove="Features\Artists\Command\Models\" />
+    <None Remove="Features\Artists\Command\Validators\" />
+    <None Remove="Features\Artists\Query\Responses\" />
+    <None Remove="Mapping\ArtistsMapping\" />
+    <None Remove="Mapping\ArtistsMapping\QueryMapping\" />
+    <None Remove="Mapping\ArtistsMapping\CommandMapping\" />
+    <None Remove="Bases\" />
+    <None Remove="Bases\ResponseBase\" />
+    <None Remove="Features\Artists\Command\Responses\" />
+    <None Remove="Behaviors\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Features\Songs\" />
+    <None Remove="Features\Songs\Command\" />
+    <None Remove="Features\Songs\Query\" />
+    <None Remove="Features\Songs\Command\Models\" />
+    <None Remove="Features\Songs\Command\Handlers\" />
+    <None Remove="Features\Songs\Command\Validators\" />
+    <None Remove="Features\Songs\Query\Models\" />
+    <None Remove="Features\Songs\Query\Handlers\" />
+    <None Remove="Features\Songs\Query\Responses\" />
+    <None Remove="Mapping\SongsMapping\" />
+    <None Remove="Mapping\SongsMapping\CommandMapping\" />
+    <None Remove="Mapping\SongsMapping\QueryMapping\" />
+    <None Remove="Features\Orders\" />
+    <None Remove="Features\Invoices\" />
+    <None Remove="Features\Orders\Command\" />
+    <None Remove="Features\Orders\Query\" />
+    <None Remove="Features\Orders\Query\Models\" />
+    <None Remove="Features\Orders\Query\Handlers\" />
+    <None Remove="Features\Orders\Query\Responses\" />
+    <None Remove="Features\Orders\Command\Handlers\" />
+    <None Remove="Features\Orders\Command\Models\" />
+    <None Remove="Features\Orders\Command\Validators\" />
+    <None Remove="Mapping\OrdersMapping\" />
+    <None Remove="Mapping\OrdersMapping\CommandMapping\" />
+    <None Remove="Mapping\OrdersMapping\QueryMapping\" />
+    <None Remove="Features\Invoices\Command\" />
+    <None Remove="Features\Invoices\Query\" />
+    <None Remove="Features\Invoices\Query\Models\" />
+    <None Remove="Features\Invoices\Query\Handlers\" />
+    <None Remove="Features\Invoices\Query\Responses\" />
+    <None Remove="Features\Invoices\Command\Handlers\" />
+    <None Remove="Features\Invoices\Command\Models\" />
+    <None Remove="Features\Invoices\Command\Validators\" />
+    <None Remove="Mapping\InvoiceMapping\" />
+    <None Remove="Mapping\InvoiceMapping\CommandMapping\" />
+    <None Remove="Mapping\InvoiceMapping\QueryMapping\" />
+    <None Remove="Features\Customers\" />
+    <None Remove="Features\Customers\Commands\" />
+    <None Remove="Features\Customers\Queries\" />
+    <None Remove="Features\Customers\Commands\Models\" />
+    <None Remove="Features\Customers\Commands\Handlers\" />
+    <None Remove="Features\Customers\Commands\Validators\" />
+    <None Remove="Features\Customers\Commands\Responses\" />
+    <None Remove="Mapping\CustomerMapping\" />
+    <None Remove="Mapping\CustomerMapping\CommandMapping\" />
+    <None Remove="Features\Authentication\" />
+    <None Remove="Features\Authentication\Commands\" />
+    <None Remove="Features\Authentication\Queries\" />
+    <None Remove="Features\Authentication\Commands\Models\" />
+    <None Remove="Features\Authentication\Commands\Handlers\" />
+    <None Remove="Features\Authentication\Commands\Validations\" />
+    <None Remove="Features\Authentication\Queries\Models\" />
+    <None Remove="Features\Authentication\Queries\Handlers\" />
+    <None Remove="Features\Authentication\Queries\Responses\" />
+    <None Remove="Features\Authentication\Commands\Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Features\Artists\" />
+    <Folder Include="Features\Artists\Command\" />
+    <Folder Include="Features\Artists\Query\" />
+    <Folder Include="Features\Artists\Query\Models\" />
+    <Folder Include="Features\Artists\Query\Handlers\" />
+    <Folder Include="Features\Artists\Command\Handlers\" />
+    <Folder Include="Features\Artists\Command\Models\" />
+    <Folder Include="Features\Artists\Command\Validators\" />
+    <Folder Include="Features\Artists\Query\Responses\" />
+    <Folder Include="Mapping\ArtistsMapping\" />
+    <Folder Include="Mapping\ArtistsMapping\QueryMapping\" />
+    <Folder Include="Mapping\ArtistsMapping\CommandMapping\" />
+    <Folder Include="Bases\" />
+    <Folder Include="Bases\ResponseBase\" />
+    <Folder Include="Features\Artists\Command\Responses\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Features\Songs\" />
+    <Folder Include="Features\Songs\Command\" />
+    <Folder Include="Features\Songs\Query\" />
+    <Folder Include="Features\Songs\Command\Models\" />
+    <Folder Include="Features\Songs\Command\Handlers\" />
+    <Folder Include="Features\Songs\Command\Validators\" />
+    <Folder Include="Features\Songs\Query\Models\" />
+    <Folder Include="Features\Songs\Query\Handlers\" />
+    <Folder Include="Features\Songs\Query\Responses\" />
+    <Folder Include="Mapping\SongsMapping\" />
+    <Folder Include="Mapping\SongsMapping\CommandMapping\" />
+    <Folder Include="Mapping\SongsMapping\QueryMapping\" />
+    <Folder Include="Features\Orders\" />
+    <Folder Include="Features\Invoices\" />
+    <Folder Include="Features\Orders\Command\" />
+    <Folder Include="Features\Orders\Query\" />
+    <Folder Include="Features\Orders\Query\Models\" />
+    <Folder Include="Features\Orders\Query\Handlers\" />
+    <Folder Include="Features\Orders\Query\Responses\" />
+    <Folder Include="Features\Orders\Command\Handlers\" />
+    <Folder Include="Features\Orders\Command\Models\" />
+    <Folder Include="Features\Orders\Command\Validators\" />
+    <Folder Include="Mapping\OrdersMapping\" />
+    <Folder Include="Mapping\OrdersMapping\CommandMapping\" />
+    <Folder Include="Mapping\OrdersMapping\QueryMapping\" />
+    <Folder Include="Features\Invoices\Command\" />
+    <Folder Include="Features\Invoices\Query\" />
+    <Folder Include="Features\Invoices\Query\Models\" />
+    <Folder Include="Features\Invoices\Query\Handlers\" />
+    <Folder Include="Features\Invoices\Query\Responses\" />
+    <Folder Include="Features\Invoices\Command\Handlers\" />
+    <Folder Include="Features\Invoices\Command\Models\" />
+    <Folder Include="Features\Invoices\Command\Validators\" />
+    <Folder Include="Mapping\InvoiceMapping\" />
+    <Folder Include="Mapping\InvoiceMapping\CommandMapping\" />
+    <Folder Include="Mapping\InvoiceMapping\QueryMapping\" />
+    <Folder Include="Features\Customers\" />
+    <Folder Include="Features\Customers\Commands\" />
+    <Folder Include="Features\Customers\Queries\" />
+    <Folder Include="Features\Customers\Commands\Models\" />
+    <Folder Include="Features\Customers\Commands\Handlers\" />
+    <Folder Include="Features\Customers\Commands\Validators\" />
+    <Folder Include="Features\Customers\Commands\Responses\" />
+    <Folder Include="Mapping\CustomerMapping\" />
+    <Folder Include="Mapping\CustomerMapping\CommandMapping\" />
+    <Folder Include="Features\Authentication\" />
+    <Folder Include="Features\Authentication\Commands\" />
+    <Folder Include="Features\Authentication\Queries\" />
+    <Folder Include="Features\Authentication\Commands\Models\" />
+    <Folder Include="Features\Authentication\Commands\Handlers\" />
+    <Folder Include="Features\Authentication\Commands\Validations\" />
+    <Folder Include="Features\Authentication\Queries\Models\" />
+    <Folder Include="Features\Authentication\Queries\Handlers\" />
+    <Folder Include="Features\Authentication\Queries\Responses\" />
+    <Folder Include="Features\Authentication\Commands\Responses\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+</Project>
