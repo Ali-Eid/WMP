@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WMBProject.Api.Controllers.Base;
 using WMBProject.Core.Features.Orders.Command.Models;
@@ -13,6 +14,7 @@ using WMBProject.Data.AppMetaData;
 
 namespace WMBProject.Api.Controllers
 {
+    [Authorize]
     public class OrderController : AppControllerBase
     {
         [HttpGet(Router.OrderRouting.list)]

@@ -9,10 +9,6 @@ namespace WMBProject.Data.Entities
         {
             UserInvoices = new HashSet<Invoice>();
         }
-        public required string Username { get; set; }
-
-        public required string Password { get; set; }
-
         public string? FirstName { get; set; } = null;
 
         public string? LastName { get; set; } = null;

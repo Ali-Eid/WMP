@@ -13,9 +13,9 @@ namespace WMBProject.Service.Invoices
             _invoiceRepository = invoiceRepository;
         }
 
-        public async Task CreateInvoice(Invoice invoice)
+        public async Task<Invoice> CreateInvoice(Invoice invoice)
         {
-          await  _invoiceRepository.AddAsync(invoice);
+         return await  _invoiceRepository.AddAsync(invoice);
         }
     }
 }

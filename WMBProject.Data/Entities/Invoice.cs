@@ -19,6 +19,7 @@ namespace WMBProject.Data.Entities
 
         public ICollection<Order> Order { get; set; }
 
+
     }
 }
 

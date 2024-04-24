@@ -6,7 +6,7 @@ namespace WMBProject.Infrastructure.Repositories.Artists
 {
     public interface IArtistRepository : IGenericRepositoryAsync<Artist>
     {
-        public Task<List<Artist>> GetArtistsListAsync();
+        public Task<List<Artist>> GetArtistsListAsync(string? artistName );
     }
 }
 

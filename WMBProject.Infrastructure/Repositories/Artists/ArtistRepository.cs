@@ -15,9 +15,16 @@ namespace WMBProject.Infrastructure.Repositories.Artists
             _artists = dbContext.Artist;
         }
 
-        public async Task<List<Artist>> GetArtistsListAsync()
+        public async Task<List<Artist>> GetArtistsListAsync(string? artistName)
         {
-            return await _artists.Include(art=>art.Country).ToListAsync();
+            if(artistName!= null)
+            {
+                return await _artists.Where(x => x.FName.ToLower().Contains(artistName.ToLower()) || x.LName.ToLower().Contains(artistName.ToLower())).Include(art => art.Country).ToListAsync();
+            }
+            else
+            {
+                return await _artists.Include(art => art.Country).ToListAsync();
+            }
         }
     }
 }

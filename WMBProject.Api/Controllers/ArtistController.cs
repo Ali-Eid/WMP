@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WMBProject.Api.Controllers.Base;
 using WMBProject.Core.Features.Artists.Command.Models;
@@ -13,12 +14,14 @@ using WMBProject.Data.AppMetaData;
 
 namespace WMBProject.Api.Controllers
 {
+   // [ApiController]
+   [Authorize]
     public class ArtistController : AppControllerBase
     {
         [HttpGet(Router.ArtistRouting.list)]
-        public async Task<IActionResult> GetArtistsList()
+        public async Task<IActionResult> GetArtistsList([FromQuery] string? artistName)
         {
-            return Ok(await Mediator.Send(new GetArtistsListQuery()));
+            return Ok(await Mediator.Send(new GetArtistsListQuery(artistName)));
         }
         [HttpGet(Router.ArtistRouting.artistById)]
         public async Task<IActionResult> GetArtistsById([FromRoute] int Id)

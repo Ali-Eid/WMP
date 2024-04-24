@@ -22,7 +22,7 @@ namespace WMBProject.Core.Features.Artists.Query.Handlers
         }
         public async Task<Response<List<GetArtistsListResponse>>> Handle(GetArtistsListQuery request, CancellationToken cancellationToken)
         {
-            var artistsList = await _artistService.GetArtistsListAsync();
+            var artistsList = await _artistService.GetArtistsListAsync(request.artistName);
             var artistsListMapper = _mapper.Map<List<GetArtistsListResponse>>(artistsList);
             return Success(artistsListMapper);
 

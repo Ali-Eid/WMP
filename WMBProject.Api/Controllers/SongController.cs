@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WMBProject.Api.Controllers.Base;
 using WMBProject.Core.Features.Artists.Command.Models;
@@ -14,18 +15,25 @@ using WMBProject.Data.AppMetaData;
 
 namespace WMBProject.Api.Controllers
 {
+    [Authorize]
     public class SongController : AppControllerBase
     {
         [HttpGet(Router.SongRouting.list)]
-        public async Task<IActionResult> GetSongsList()
+        public async Task<IActionResult> GetSongsList([FromQuery] string? title)
         {
-            return Ok(await Mediator.Send(new GetSongsListQuery()));
+            return Ok(await Mediator.Send(new GetSongsListQuery(title)));
         }
         [HttpGet(Router.SongRouting.songById)]
         public async Task<IActionResult> GetSongById([FromRoute] int Id)
         {
             return NewResult(await Mediator.Send(new GetSongByIdQuery(Id)));
         }
+        [HttpGet(Router.SongRouting.songsByArtist)]
+        public async Task<IActionResult> GetSongsByArtistId([FromQuery] int ArtistId)
+        {
+            return Ok(await Mediator.Send(new GetSongsByArtistIdQuery(ArtistId)));
+        }
+
         [HttpPost(Router.SongRouting.create)]
         public async Task<IActionResult> CreateSong([FromBody] CreateSongCommand command)
         {

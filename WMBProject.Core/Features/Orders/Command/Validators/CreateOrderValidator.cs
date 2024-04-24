@@ -13,7 +13,7 @@ namespace WMBProject.Core.Features.Orders.Command.Validators
         }
 
         void ApplyValidationRules() {
-            RuleFor(x => x.SongId).NotNull().NotEmpty();
+            RuleFor(x => x.SongsIds).NotNull().NotEmpty();
             RuleFor(x => x.InvoiceId).NotNull().NotEmpty();
         }
 

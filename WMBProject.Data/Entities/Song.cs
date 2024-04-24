@@ -20,6 +20,7 @@ namespace WMBProject.Data.Entities
         public virtual required SongType Type { get; set; }
 
         public  ICollection<Order> Order { get; set; }
+
     }
 }
 

@@ -6,7 +6,7 @@ namespace WMBProject.Core.Features.Orders.Command.Models
 {
     public class CreateOrderCommand : IRequest<Response<string>>
     {
-        public int SongId { get; set; }
+        public List<int> SongsIds { get; set; } = new List<int>();
 
         public int InvoiceId { get; set; }
     }

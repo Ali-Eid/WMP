@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{B5DBAD68-02BC-47E3-92F9-A20C348164AA}|https">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.WMBProject.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WMBProject.Core/Features/Customers/Commands/Handlers/CustomerHandlers.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WMBProject.Core/Features/Statics/Query/Responses/StaticDataResponse.cs">
     <Files>
-      <File FileName="WMBProject.Data/Entities/Artist.cs" Line="1" Column="1" />
-      <File FileName="WMBProject.Data/Entities/Country.cs" Line="1" Column="1" />
+      <File FileName="WMBProject.Data/Entities/Artist.cs" />
+      <File FileName="WMBProject.Data/Entities/Country.cs" />
       <File FileName="WMBProject.Data/Entities/Song.cs" />
       <File FileName="WMBProject.Data/Entities/SongType.cs" />
       <File FileName="WMBProject.Data/Entities/Order.cs" />
-      <File FileName="WMBProject.Data/Entities/Invoice.cs" Line="14" Column="24" />
-      <File FileName="WMBProject.Api/appsettings.json" Line="14" Column="1" />
-      <File FileName="WMBProject.Api/Program.cs" Line="33" Column="1" />
-      <File FileName="WMBProject.Infrastructure/Repositories/Artists/ArtistRepository.cs" Line="20" Column="41" />
-      <File FileName="WMBProject.Infrastructure/Repositories/Artists/IArtistRepository.cs" Line="7" Column="42" />
-      <File FileName="WMBProject.Infrastructure/Context/ApplicationDbContext.cs" Line="21" Column="1" />
+      <File FileName="WMBProject.Data/Entities/Invoice.cs" />
+      <File FileName="WMBProject.Api/appsettings.json" />
+      <File FileName="WMBProject.Api/Program.cs" />
+      <File FileName="WMBProject.Infrastructure/Repositories/Artists/ArtistRepository.cs" />
+      <File FileName="WMBProject.Infrastructure/Repositories/Artists/IArtistRepository.cs" />
+      <File FileName="WMBProject.Infrastructure/Context/ApplicationDbContext.cs" />
       <File FileName="WMBProject.Infrastructure/ModuleInfrastructureDependencies.cs" />
-      <File FileName="WMBProject.Service/ModuleServiceDependencies.cs" Line="12" Column="55" />
+      <File FileName="WMBProject.Service/ModuleServiceDependencies.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Models/GetArtistsListQuery.cs" />
       <File FileName="WMBProject.Core/ModuleCoreDependencies.cs" />
       <File FileName="WMBProject.Api/Controllers/ArtistController.cs" />
@@ -22,14 +24,14 @@
       <File FileName="WMBProject.Service/Artists/ArtistService.cs" />
       <File FileName="WMBProject.Core/Mapping/ArtistsMapping/ArtistProfile.cs" />
       <File FileName="WMBProject.Core/Mapping/ArtistsMapping/QueryMapping/GetArtistsListMapping.cs" />
-      <File FileName="WMBProject.Core/Bases/ResponseBase/Response.cs" Line="6" Column="18" />
-      <File FileName="WMBProject.Core/Bases/ResponseBase/ResponseHandler.cs" Line="1" Column="1" />
+      <File FileName="WMBProject.Core/Bases/ResponseBase/Response.cs" />
+      <File FileName="WMBProject.Core/Bases/ResponseBase/ResponseHandler.cs" />
       <File FileName="WMBProject.Infrastructure/Bases/RepositoryBase/GenericRepositoryAsync.cs" />
       <File FileName="WMBProject.Service/Artists/IArtistService.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Models/GetArtistByIdQuery.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Responses/GetArtistByIdResponse.cs" />
       <File FileName="WMBProject.Core/Mapping/ArtistsMapping/QueryMapping/GetArtistByIdMapping.cs" />
-      <File FileName="WMBProject.Data/AppMetaData/Router.cs" Line="45" Column="38" />
+      <File FileName="WMBProject.Data/AppMetaData/Router.cs" />
       <File FileName="WMBProject.Api/Controllers/Base/AppControllerBase.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Command/Models/CreateArtistCommand.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Command/Responses/CreateArtistResponse.cs" />
@@ -47,12 +49,12 @@
       <File FileName="WMBProject.Infrastructure/Repositories/Songs/ISongRepositroy.cs" />
       <File FileName="WMBProject.Infrastructure/Repositories/Songs/SongRepository.cs" />
       <File FileName="WMBProject.Service/Orders/IOrderService.cs" />
-      <File FileName="WMBProject.Service/Orders/OrderService.cs" Line="1" Column="1" />
-      <File FileName="WMBProject.Service/Invoices/IInvoiceService.cs" Line="6" Column="32" />
-      <File FileName="WMBProject.Service/Invoices/InvoiceService.cs" Line="10" Column="1" />
+      <File FileName="WMBProject.Service/Orders/OrderService.cs" />
+      <File FileName="WMBProject.Service/Invoices/IInvoiceService.cs" />
+      <File FileName="WMBProject.Service/Invoices/InvoiceService.cs" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongsListQuery.cs" />
-      <File FileName="WMBProject.Core/Features/Songs/Query/Responses/GetSongsListResponse.cs" Line="1" Column="1" />
-      <File FileName="WMBProject.Core/Features/Songs/Query/Handlers/SongsQueryHandler.cs" />
+      <File FileName="WMBProject.Core/Features/Songs/Query/Responses/GetSongsListResponse.cs" />
+      <File FileName="WMBProject.Core/Features/Songs/Query/Handlers/SongsQueryHandler.cs" Line="40" Column="1" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongByIdQuery.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Handlers/ArtistQueryHandlers.cs" />
       <File FileName="WMBProject.Core/Mapping/SongsMapping/SongProfile.cs" />
@@ -64,11 +66,11 @@
       <File FileName="WMBProject.Core/Mapping/SongsMapping/CommandMapping/CreateSongMapping.cs" />
       <File FileName="WMBProject.Core/Mapping/SongsMapping/CommandMapping/UpdateSongMapping.cs" />
       <File FileName="WMBProject.Core/Mapping/ArtistsMapping/CommandMapping/UpdateArtistMapping.cs" />
-      <File FileName="WMBProject.Api/Controllers/SongController.cs" Line="1" Column="1" />
+      <File FileName="WMBProject.Api/Controllers/SongController.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Query/Models/GetOrdersListQuery.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Query/Responses/GetOrdersListResponse.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Query/Handlers/OrderQueryHandler.cs" />
-      <File FileName="WMBProject.Core/Mapping/OrdersMapping/OrderProfile.cs" Line="1" Column="1" />
+      <File FileName="WMBProject.Core/Mapping/OrdersMapping/OrderProfile.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Command/Models/CreateOrderCommand.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Command/Validators/CreateOrderValidator.cs" />
       <File FileName="WMBProject.Core/Features/Orders/Command/Handlers/OrderCommandHandler.cs" />
@@ -79,60 +81,68 @@
       <File FileName="WMBProject.Core/Features/Invoices/Command/Handlers/InvoiceCommandHandler.cs" />
       <File FileName="WMBProject.Core/Mapping/InvoiceMapping/InvoiceProfile.cs" />
       <File FileName="WMBProject.Core/Mapping/InvoiceMapping/CommandMapping/CreateInvoiceMapping.cs" />
-      <File FileName="WMBProject.Api/Controllers/InvoiceController.cs" Line="22" Column="6" />
-      <File FileName="WMBProject.Infrastructure/Migrations/ApplicationDbContextModelSnapshot.cs" />
-      <File FileName="WMBProject.Infrastructure/Migrations/20240405092737_Initial.Designer.cs" />
-      <File FileName="WMBProject.Data/Entities/Identity/Customer.cs" Line="7" Column="1" />
-      <File FileName="WMBProject.Data/Entities/BaseEntity.cs" Line="10" Column="1" />
-      <File FileName="WMBProject.Service/Customer/CustomerService.cs" Line="17" Column="10" />
-      <File FileName="WMBProject.Infrastructure/Repositories/Customers/ICustomerRepository.cs" Line="9" Column="27" />
-      <File FileName="WMBProject.Service/Customers/ICustomerService.cs" Line="15" Column="65" />
-      <File FileName="WMBProject.Core/Features/Customers/Commands/Models/CreateCustomerCommand.cs" Line="10" Column="1" />
-      <File FileName="WMBProject.Core/Features/Customers/Commands/Responses/CustomerResponse.cs" Line="4" Column="18" />
-      <File FileName="WMBProject.Core/Features/Customers/Commands/Handlers/CustomerHandlers.cs" Line="26" Column="1" />
-      <File FileName="WMBProject.Core/Features/Customers/Commands/Models/LoginCustomerCommand.cs" Line="13" Column="6" />
-      <File FileName="WMBProject.Data/Enums/CheckCustomer.cs" Line="4" Column="30" />
-      <File FileName="WMBProject.Data/Enums/CreateStatus.cs" Line="1" Column="1" />
-      <File FileName="WMBProject.Core/Mapping/CustomerMapping/CustomerProfile.cs" Line="4" Column="1" />
-      <File FileName="WMBProject.Core/Mapping/CustomerMapping/CommandMapping/CreateCustomerMapping.cs" Line="13" Column="41" />
-      <File FileName="WMBProject.Api/Controllers/CustomerController.cs" Line="24" Column="10" />
+      <File FileName="WMBProject.Api/Controllers/InvoiceController.cs" />
+      <File FileName="WMBProject.Data/Entities/BaseEntity.cs" />
+      <File FileName="WMBProject.Service/Customers/ICustomerService.cs" />
+      <File FileName="WMBProject.Core/Features/Customers/Commands/Models/CreateCustomerCommand.cs" />
+      <File FileName="WMBProject.Core/Features/Customers/Commands/Responses/CustomerResponse.cs" />
+      <File FileName="WMBProject.Core/Features/Customers/Commands/Handlers/CustomerHandlers.cs" />
+      <File FileName="WMBProject.Core/Features/Customers/Commands/Models/LoginCustomerCommand.cs" />
+      <File FileName="WMBProject.Data/Enums/CheckCustomer.cs" />
+      <File FileName="WMBProject.Data/Enums/CreateStatus.cs" />
+      <File FileName="WMBProject.Core/Mapping/CustomerMapping/CustomerProfile.cs" />
+      <File FileName="WMBProject.Core/Mapping/CustomerMapping/CommandMapping/CreateCustomerMapping.cs" />
+      <File FileName="WMBProject.Data/Enums/GenderEnum.cs" />
+      <File FileName="WMBProject.Service/Customers/CustomerService.cs" />
+      <File FileName="WMBProject.Infrastructure/ServiceRegisteration.cs" />
+      <File FileName="WMBProject.Core/Features/Authentication/Commands/Models/RegisterUserCommand.cs" />
+      <File FileName="WMBProject.Core/Features/Authentication/Commands/Handlers/AuthenticationHandlers.cs" />
+      <File FileName="WMBProject.Data/Identity/User.cs" />
+      <File FileName="WMBProject.Core/Mapping/AuthenticationMapping/AuthenticationProfile.cs" />
+      <File FileName="WMBProject.Core/Mapping/AuthenticationMapping/CommandMapping/RegisterUserMapping.cs" />
+      <File FileName="WMBProject.Api/Controllers/AuthenticationController.cs" />
+      <File FileName="WMBProject.Data/Configuration/UserClaimModel.cs" />
+      <File FileName="WMBProject.Api/WMBProject.Api.csproj" />
+      <File FileName="WMBProject.Infrastructure/WMBProject.Infrastructure.csproj" />
+      <File FileName="WMBProject.Core/Features/Authentication/Commands/Models/LoginUserCommand.cs" />
+      <File FileName="WMBProject.Core/Mapping/OrdersMapping/QueryMapping/GetOrdersListMapping.cs" />
+      <File FileName="WMBProject.Infrastructure/Migrations/20240422220353_InitDB.cs" />
+      <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongsByArtistIdQuery.cs" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Models/GetCountriesQuery.cs" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Models/GetSongTypesQuery.cs" Line="8" Column="72" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Responses/StaticDataResponse.cs" Line="4" Column="18" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Handlers/StaticHandler.cs" />
+      <File FileName="WMBProject.Core/Mapping/StaticMapping/StaticProfile.cs" />
+      <File FileName="WMBProject.Core/Mapping/StaticMapping/QueriesMapping/GetCountriesMapping.cs" />
+      <File FileName="WMBProject.Core/Mapping/StaticMapping/QueriesMapping/GetSongsTypeMapping.cs" />
+      <File FileName="WMBProject.Api/Controllers/StaticsController.cs" Line="25" Column="53" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WMBProject" expanded="True">
+            <Node name="WMBProject.Api" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
             <Node name="WMBProject.Core">
-              <Node name="Bases" expanded="True">
-                <Node name="ResponseBase" expanded="True" />
-              </Node>
-              <Node name="Features">
-                <Node name="Customers">
-                  <Node name="Commands">
-                    <Node name="Handlers">
-                      <Node name="CustomerHandlers.cs" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
+              <Node name="Features" expanded="True">
                 <Node name="Songs" expanded="True">
                   <Node name="Query" expanded="True">
-                    <Node name="Responses" expanded="True" />
+                    <Node name="Handlers" expanded="True" />
                   </Node>
                 </Node>
-              </Node>
-              <Node name="Mapping">
-                <Node name="CustomerMapping">
-                  <Node name="CommandMapping" expanded="True" />
+                <Node name="Statics" expanded="True">
+                  <Node name="Query" expanded="True">
+                    <Node name="Models" expanded="True" />
+                    <Node name="Responses" expanded="True">
+                      <Node name="StaticDataResponse.cs" selected="True" />
+                    </Node>
+                  </Node>
                 </Node>
               </Node>
             </Node>
             <Node name="WMBProject.Data">
-              <Node name="AppMetaData" expanded="True" />
               <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="WMBProject.Service">
-              <Node name="Customers" expanded="True" />
-              <Node name="Invoices" expanded="True" />
-              <Node name="Orders" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -143,6 +153,4 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

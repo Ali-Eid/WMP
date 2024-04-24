@@ -12,6 +12,7 @@
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProject.Core.AssemblyInfoInputs.cache
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProject.Core.AssemblyInfo.cs
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProject.Core.csproj.CoreCompileInputs.cache
+/Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProject.Core.sourcelink.json
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProje.82B8E5FF.Up2Date
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/WMBProject.Core.dll
 /Users/ali/Projects/WMBProject.Api/WMBProject.Core/obj/Debug/net8.0/refint/WMBProject.Core.dll

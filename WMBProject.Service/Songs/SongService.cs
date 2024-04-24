@@ -37,21 +37,32 @@ namespace WMBProject.Service.Songs
             }
         }
 
-        public Song? GetSongById(int Id)
-        {
-            return _songRepository.GetTableNoTracking()
-                                            .Where(x => x.Id == Id)
-                                            .Include(x => x.Artist)
-                                            .Include(x => x.Type)
-                                            .FirstOrDefault();
-        }
-
-        public async Task<List<Song>> GetSongsListAsync()
+        public async Task<List<Song>> GetSongByIds(List<int> Ids)
         {
             return await _songRepository.GetTableNoTracking()
-                                        .Include(x => x.Artist)
-                                        .Include(x => x.Type)
-                                        .ToListAsync();
+                                            .Where(x => Ids.Contains(x.Id))
+                                            .Include(x => x.Artist)
+                                            .Include(x => x.Type)
+                                            .ToListAsync();
+        }
+
+        public async Task<List<Song>> GetSongsListAsync(string? title)
+        {
+            if(title != null)
+            {
+                return await _songRepository.GetTableNoTracking().Where(x=>x.Title.ToLower().Contains(title))
+                                       .Include(x => x.Artist)
+                                       .Include(x => x.Type)
+                                       .ToListAsync();
+            }
+            else
+            {
+                return await _songRepository.GetTableNoTracking()
+                                       .Include(x => x.Artist)
+                                       .Include(x => x.Type)
+                                       .ToListAsync();
+            }
+           
         }
 
         public async Task UpdateSong(Song song)
@@ -72,6 +83,12 @@ namespace WMBProject.Service.Songs
                                         .ToListAsync();
         }
 
+        public async Task<List<Song>> GetSongsByArtistIdAsync(int artistId)
+        {
+            return await _songRepository.GetTableNoTracking().Where(x=>x.ArtistId==artistId).Include(x => x.Artist)
+                                        .Include(x => x.Type)
+                                        .ToListAsync();
+        }
     }
 }
 

@@ -6,7 +6,10 @@ namespace WMBProject.Core.Features.Invoices.Command.Models
 {
     public class CreateInvoiceCommand : IRequest<Response<string>>
     {
-        public int SongId { get; set; }
+        public List<int> SongsIds { get; set; } = new List<int>();
+
+        public long UserId { get; set; }
+
         public required string CreditCard { get; set; }
     }
 }

@@ -86,6 +86,15 @@
     <None Remove="Features\Authentication\Queries\Handlers\" />
     <None Remove="Features\Authentication\Queries\Responses\" />
     <None Remove="Features\Authentication\Commands\Responses\" />
+    <None Remove="Mapping\AuthenticationMapping\" />
+    <None Remove="Mapping\AuthenticationMapping\CommandMapping\" />
+    <None Remove="Mapping\AuthenticationMapping\QueryMapping\" />
+    <None Remove="Features\Statics\" />
+    <None Remove="Features\Statics\Query\" />
+    <None Remove="Features\Statics\Query\Handlers\" />
+    <None Remove="Features\Statics\Query\Responses\" />
+    <None Remove="Mapping\StaticMapping\" />
+    <None Remove="Mapping\StaticMapping\QueriesMapping\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\" />
@@ -162,6 +171,16 @@
     <Folder Include="Features\Authentication\Queries\Handlers\" />
     <Folder Include="Features\Authentication\Queries\Responses\" />
     <Folder Include="Features\Authentication\Commands\Responses\" />
+    <Folder Include="Mapping\AuthenticationMapping\" />
+    <Folder Include="Mapping\AuthenticationMapping\CommandMapping\" />
+    <Folder Include="Mapping\AuthenticationMapping\QueryMapping\" />
+    <Folder Include="Features\Statics\" />
+    <Folder Include="Features\Statics\Query\" />
+    <Folder Include="Features\Statics\Query\Models\" />
+    <Folder Include="Features\Statics\Query\Handlers\" />
+    <Folder Include="Features\Statics\Query\Responses\" />
+    <Folder Include="Mapping\StaticMapping\" />
+    <Folder Include="Mapping\StaticMapping\QueriesMapping\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />

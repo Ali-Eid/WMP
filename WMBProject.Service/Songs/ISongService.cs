@@ -6,11 +6,14 @@ namespace WMBProject.Service.Songs
 {
     public interface ISongService
     {
-        public Task<List<Song>> GetSongsListAsync();
+        public Task<List<Song>> GetSongsListAsync(string? title);
 
         public Task<List<Song>> GetSongsListByIdsAsync(List<int> ids);
 
-        public Song? GetSongById(int Id);
+        public Task<List<Song>> GetSongsByArtistIdAsync(int artistId);
+
+
+        public Task<List<Song>> GetSongByIds(List<int> Ids);
 
         public Task<CreateStatus> CreateSong(Song song);
 

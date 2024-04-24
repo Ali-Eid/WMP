@@ -16,12 +16,14 @@ builder.Services.AddSwaggerGen();
 
 //Connect to DataBase
 builder.Services.AddDbContext<ApplicationDbContext>(option => {
-    option.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 #region Dependecies inject
+
 //Dependcies inject
-builder.Services.AddServiceRegisteration();
+
+builder.Services.AddServiceRegisteration(builder.Configuration);
 
 builder.Services.AddInfrastructureDependencies();
 
@@ -43,7 +45,8 @@ if (app.Environment.IsDevelopment())
 app.UseMiddleware<ErrorHandlerMiddleware>();
 
 app.UseHttpsRedirection();
- 
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

@@ -8,6 +8,12 @@ namespace WMBProject.Core.Features.Artists.Query.Models
 {
     public class GetArtistsListQuery : IRequest<Response<List<GetArtistsListResponse>>>
     {
+        public string? artistName { get; set; }
+
+        public GetArtistsListQuery(string? artistName)
+        {
+            this.artistName = artistName;
+        }
     }
 }
 

@@ -5,7 +5,7 @@ namespace WMBProject.Service.Invoices
 {
     public interface IInvoiceService
     {
-        public Task CreateInvoice(Invoice invoice);
+        public Task<Invoice> CreateInvoice(Invoice invoice);
     }
 }
 

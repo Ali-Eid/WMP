@@ -14,7 +14,7 @@ namespace WMBProject.Core.Features.Invoices.Command.Validators
 
         void ApplyValidatorRules()
         {
-            RuleFor(x => x.SongId).NotEmpty().NotNull();
+            RuleFor(x => x.SongsIds).NotEmpty().NotNull();
             RuleFor(x => x.CreditCard).NotEmpty().NotNull().MinimumLength(14).MaximumLength(18);
 
         }

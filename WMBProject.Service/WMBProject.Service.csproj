@@ -16,6 +16,8 @@
     <None Remove="Orders\" />
     <None Remove="Invoices\" />
     <None Remove="Customers\" />
+    <None Remove="Authentications\" />
+    <None Remove="StaticServices\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Artists\" />
@@ -23,5 +25,7 @@
     <Folder Include="Orders\" />
     <Folder Include="Invoices\" />
     <Folder Include="Customers\" />
+    <Folder Include="Authentications\" />
+    <Folder Include="StaticServices\" />
   </ItemGroup>
 </Project>

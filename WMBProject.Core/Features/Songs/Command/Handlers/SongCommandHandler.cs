@@ -35,7 +35,7 @@ namespace WMBProject.Core.Features.Songs.Command.Handlers
 
         public async Task<Response<string>> Handle(UpdateSongCommand request, CancellationToken cancellationToken)
         {
-            var song =  _songService.GetSongById(request.Id);
+            var song = await _songService.GetSongByIds(new List<int>() { request.Id });
             if (song == null) return NotFound<string>("The song is not exist");
 
             var songMapper = _mapper.Map<Song>(request);
@@ -46,10 +46,10 @@ namespace WMBProject.Core.Features.Songs.Command.Handlers
 
         public async Task<Response<string>> Handle(DeleteSongCommand request, CancellationToken cancellationToken)
         {
-            var song = _songService.GetSongById(request.Id);
+            var song = await _songService.GetSongByIds(new List<int>() { request.Id });
             if (song == null) return NotFound<string>("The song is not exist");
 
-            await _songService.DeleteSong(song);
+            await _songService.DeleteSong(song.FirstOrDefault());
             return Deleted<string>("Deleted successfully");
 
         }

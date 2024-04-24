@@ -51,9 +51,9 @@ namespace WMBProject.Service.Artists
             return artist;
         }
 
-        public async Task<List<Artist>> GetArtistsListAsync()
+        public async Task<List<Artist>> GetArtistsListAsync(string? artistName)
         {   
-            return await _artistRepository.GetArtistsListAsync();
+            return await _artistRepository.GetArtistsListAsync(artistName);
         }
 
         public async Task UpdateArtist(Artist artist)

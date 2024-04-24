@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WMBProject.Api.Controllers.Base;
 using WMBProject.Core.Features.Invoices.Command.Models;
@@ -12,8 +13,10 @@ using WMBProject.Data.AppMetaData;
 
 namespace WMBProject.Api.Controllers
 {
+    [Authorize]
     public class InvoiceController : AppControllerBase
     {
+
         [HttpPost(Router.InvoiceRouting.create)]
         public async Task<IActionResult> CreateInvoice([FromBody] CreateInvoiceCommand command)
         {
