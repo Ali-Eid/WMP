@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WMBProject.Service")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c49ce2de00f01dd60b2031cf87a2083b3ff8f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0efc270b0fa9de750a06851fdc3009d2f0bcb646")]
 [assembly: System.Reflection.AssemblyProductAttribute("WMBProject.Service")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WMBProject.Service")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

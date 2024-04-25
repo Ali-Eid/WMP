@@ -1,8 +1,5 @@
 ﻿<Properties StartupConfiguration="{B5DBAD68-02BC-47E3-92F9-A20C348164AA}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.WMBProject.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="WMBProject.Core/Features/Statics/Query/Responses/StaticDataResponse.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WMBProject.Infrastructure/Context/ApplicationDbContext.cs">
     <Files>
       <File FileName="WMBProject.Data/Entities/Artist.cs" />
       <File FileName="WMBProject.Data/Entities/Country.cs" />
@@ -14,7 +11,7 @@
       <File FileName="WMBProject.Api/Program.cs" />
       <File FileName="WMBProject.Infrastructure/Repositories/Artists/ArtistRepository.cs" />
       <File FileName="WMBProject.Infrastructure/Repositories/Artists/IArtistRepository.cs" />
-      <File FileName="WMBProject.Infrastructure/Context/ApplicationDbContext.cs" />
+      <File FileName="WMBProject.Infrastructure/Context/ApplicationDbContext.cs" Line="1" Column="1" />
       <File FileName="WMBProject.Infrastructure/ModuleInfrastructureDependencies.cs" />
       <File FileName="WMBProject.Service/ModuleServiceDependencies.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Models/GetArtistsListQuery.cs" />
@@ -54,7 +51,7 @@
       <File FileName="WMBProject.Service/Invoices/InvoiceService.cs" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongsListQuery.cs" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Responses/GetSongsListResponse.cs" />
-      <File FileName="WMBProject.Core/Features/Songs/Query/Handlers/SongsQueryHandler.cs" Line="40" Column="1" />
+      <File FileName="WMBProject.Core/Features/Songs/Query/Handlers/SongsQueryHandler.cs" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongByIdQuery.cs" />
       <File FileName="WMBProject.Core/Features/Artists/Query/Handlers/ArtistQueryHandlers.cs" />
       <File FileName="WMBProject.Core/Mapping/SongsMapping/SongProfile.cs" />
@@ -109,13 +106,20 @@
       <File FileName="WMBProject.Infrastructure/Migrations/20240422220353_InitDB.cs" />
       <File FileName="WMBProject.Core/Features/Songs/Query/Models/GetSongsByArtistIdQuery.cs" />
       <File FileName="WMBProject.Core/Features/Statics/Query/Models/GetCountriesQuery.cs" />
-      <File FileName="WMBProject.Core/Features/Statics/Query/Models/GetSongTypesQuery.cs" Line="8" Column="72" />
-      <File FileName="WMBProject.Core/Features/Statics/Query/Responses/StaticDataResponse.cs" Line="4" Column="18" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Models/GetSongTypesQuery.cs" />
+      <File FileName="WMBProject.Core/Features/Statics/Query/Responses/StaticDataResponse.cs" />
       <File FileName="WMBProject.Core/Features/Statics/Query/Handlers/StaticHandler.cs" />
       <File FileName="WMBProject.Core/Mapping/StaticMapping/StaticProfile.cs" />
       <File FileName="WMBProject.Core/Mapping/StaticMapping/QueriesMapping/GetCountriesMapping.cs" />
       <File FileName="WMBProject.Core/Mapping/StaticMapping/QueriesMapping/GetSongsTypeMapping.cs" />
-      <File FileName="WMBProject.Api/Controllers/StaticsController.cs" Line="25" Column="53" />
+      <File FileName="WMBProject.Api/Controllers/StaticsController.cs" />
+      <File FileName="WMBProject.Core/Features/Authentication/Queries/Models/GetUserQuery.cs" />
+      <File FileName="WMBProject.Core/Features/Authentication/Queries/Responses/GetUserResponse.cs" Line="10" Column="31" />
+      <File FileName="WMBProject.Service/Authentications/IAuthenticationService.cs" />
+      <File FileName="WMBProject.Core/Features/Authentication/Queries/Handlers/UserQueryHandler.cs" />
+      <File FileName="WMBProject.Service/Authentications/AuthenticationService.cs" />
+      <File FileName="WMBProject.Core/Mapping/AuthenticationMapping/QueryMapping/GetUserMapping.cs" />
+      <File FileName="WMBProject.Api/Controllers/ProfileController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -124,32 +128,20 @@
             <Node name="WMBProject.Api" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="WMBProject.Core">
-              <Node name="Features" expanded="True">
-                <Node name="Songs" expanded="True">
-                  <Node name="Query" expanded="True">
-                    <Node name="Handlers" expanded="True" />
-                  </Node>
-                </Node>
-                <Node name="Statics" expanded="True">
-                  <Node name="Query" expanded="True">
-                    <Node name="Models" expanded="True" />
-                    <Node name="Responses" expanded="True">
-                      <Node name="StaticDataResponse.cs" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
+            <Node name="WMBProject.Infrastructure" expanded="True">
+              <Node name="Context" expanded="True">
+                <Node name="ApplicationDbContext.cs" selected="True" />
               </Node>
-            </Node>
-            <Node name="WMBProject.Data">
-              <Node name="Entities" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.WMBProject.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

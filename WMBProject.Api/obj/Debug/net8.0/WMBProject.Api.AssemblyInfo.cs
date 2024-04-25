@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WMBProject.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c49ce2de00f01dd60b2031cf87a2083b3ff8f41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0efc270b0fa9de750a06851fdc3009d2f0bcb646")]
 [assembly: System.Reflection.AssemblyProductAttribute("WMBProject.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WMBProject.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
